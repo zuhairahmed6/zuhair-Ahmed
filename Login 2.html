@@ -1,0 +1,536 @@
+# zuhair-Ahmed
+<html>
+
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css" media="all">
+
+ /*     body{
+
+  align-items: center;
+
+  text-align: center;
+
+  align-content: center;
+
+  
+
+  
+
+}
+
+.field{
+
+  position: relative;
+
+  padding: 10px;
+
+  display: flex;
+
+  flex-flow: column-reverse;
+
+  margin-bottom: 1em;
+
+}
+
+.dform{
+
+  text-align: center;
+
+  display: block;
+
+}
+
+.button {
+
+  background: #fff;
+
+  border-radius: 20px;
+
+  height: 40px;
+
+  width: 90px;
+
+  border: none;
+
+  text-align: center;
+
+  font-size: 10px;
+
+  font-style: inherit;
+
+  letter-spacing: .7px;
+
+}
+
+.button input{
+
+  margin-top: 5px;
+
+  border: none;
+
+  display: inline-block;
+
+}
+
+form {
+
+  margin: 2em 0;
+
+  box-shadow: 0 15px 25px rgba(0,0,0,.5); 
+
+  max-width: 80%;
+
+  max-height: 75%;
+
+  display: inline-block;
+
+}
+
+input{
+
+  border: none;
+
+  padding: 8px;
+
+  font-size: 16px;
+
+}
+
+label{
+
+  position: absolute;
+
+  font-size: 16px;
+
+  transition: all 0.2s;
+
+  opacity: .5;
+
+}
+
+input:placeholder-shown + label {
+
+  touch-action: manipulation;cursor: text;
+
+  max-width: 66.66%;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  transform-origin: left bottom;
+
+  transform: translate(0, 2.125rem) scale(1.5);
+
+}
+
+input:not(:placeholder-shown) + label,
+
+input:focus + label {
+
+  transform: translate(0, 0) scale(1);
+
+  cursor: pointer;
+
+}
+
+label {
+
+  text-transform: lowercase;
+
+  letter-spacing: 0.05em;
+
+  
+
+}
+
+label, input {
+
+  transition: all 0.8s;
+
+  touch-action: manipulation;
+
+}
+
+form {
+
+  margin: 2em 0;
+
+  padding: 20px;
+
+  border-radius: 8px;
+
+  background: -webkit-linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+
+  background: linear-gradient(to bottom, #91EAE4, #86A8E7, #7F7FD5);
+
+}
+
+ 
+
+.field {
+
+  display: flex;
+
+  flex-flow: column-reverse;
+
+  margin-bottom: 1em;
+
+}
+
+label, input {
+
+  transition: all 0.8s;
+
+  touch-action: manipulation;
+
+  
+
+}
+
+h3{
+
+  letter-spacing: .9px;
+
+}
+
+input {
+
+  background: none;
+
+  font-size: 1.5em;
+
+  border: 0;
+
+  border-bottom: 1px solid #ccc;
+
+  font-family: inherit;
+
+  -webkit-appearance: none;
+
+  border-radius: 0 0 0 5px;
+
+  padding: 0;
+
+  cursor: text;
+
+}
+
+input:focus + label {
+
+  
+
+  color: #0fbedb;
+
+  border-radius: 0 0 0 5px;
+
+  font-size: 8px;
+
+  opacity: 1;
+
+  top : -1px;
+
+  
+
+  
+
+ 
+
+}
+
+input:focus {
+
+  outline: 0;
+
+  border-bottom: 2px solid #0fbedb;
+
+  border-radius: 0 0 0 5px;
+
+  padding: 0;
+
+ 
+
+  
+
+}
+
+label {
+
+  
+
+  letter-spacing: 0.05em;
+
+}
+
+input:placeholder-shown + label {
+
+  cursor: text;
+
+  max-width: 66.66%;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  transform-origin: left bottom;
+
+  
+
+  transform: translate(9px, 2.125rem) scale(1.5);
+
+}
+
+::-webkit-input-placeholder {
+
+  opacity: 0;
+
+  transition: inherit;
+
+}
+
+input:focus::-webkit-input-placeholder {
+
+  opacity: 1;
+
+  
+
+}
+
+input:not(:placeholder-shown) + label,
+
+input:focus + label {
+
+  transform: translate(0, 0) scale(1);
+
+  cursor: pointer;
+
+ 
+
+}
+
+*/
+
+     body
+
+           {
+
+    margin: 0;
+
+    padding: 0;
+
+    font-family: sans-serif;
+
+    background:#ffb9e8;
+
+         }
+
+      
+
+.box
+
+{
+
+    width: 300px;
+
+    padding: 30px;
+
+    position: absolute;
+
+    top:40%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background:#ffb9e8;
+
+    text-align: center;
+
+}
+
+.box h1
+
+{
+
+    color:red;
+
+    
+
+    font-weight:bold;
+
+}
+
+.box input[type="text"], .box input[type="password"], .box input[type="email"]
+
+{
+
+    border: 0;
+
+    background: none;
+
+    display: block;
+
+    margin: 10px auto;
+
+    text-align: center;
+
+    border: 2px solid #3498db;
+
+    padding: 10px 10px;
+
+    width: 200px;
+
+    outline: none;
+
+    color: white;
+
+    border-radius: 24px;
+
+    transition: 0.25s;
+
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus{
+
+    width: 240px;
+
+    border-color:#ca6e92;
+
+}
+
+.box input[type="submit"], button[type="submit"]
+
+{
+
+    border: 0;
+
+    background: none;
+
+    display: block;
+
+    margin: 20px auto;
+
+    text-align: center;
+
+    border: 2px solid #2ecc71;
+
+    padding: 14px 10px;
+
+    width: 200px;
+
+    outline: none;
+
+    color: white;
+
+    border-radius: 24px;
+
+    transition: 0.25s;
+
+    cursor: pointer;
+
+    font-size:20px;
+
+}
+
+.box input[type="submit"]:hover
+
+{
+
+    background:#ca885c;
+
+}
+
+a
+
+{
+
+	     	     
+
+	     font-size:25px;
+
+	      Font-weight: bold;
+
+		    text-decoration:none;
+
+		    color:#46a4ff;
+
+		    
+
+	}
+
+           label,
+
+           {
+
+           				
+
+           		font-size:20px;
+
+           		
+
+           		}
+
+    </style>
+
+  </head>
+
+  <body>
+
+    
+
+      
+
+    
+
+    <form action="login.php" method="post" accept-charset="utf-8" class="box">
+
+      
+
+        <h1>Login</h1>
+
+      
+
+    
+
+       <label for="username">username</label>
+
+        <input type="text" name="username" id="username" required="" value="" placeholder="Enter username"/>
+
+        
+
+  
+
+   
+
+        <label for="password">password</label>
+
+        <input type="password" name="password" id="password" required="" value="" placeholder="Enter password" />
+
+    
+
+     
+
+    
+
+        <input type="submit" name="submit" id="submit" value="login" />
+
+     
+
+        <a href="forget.html">forget password</a>
+
+     
+
+    </form>
+
+  
+
+  </body>
+
+</html>
